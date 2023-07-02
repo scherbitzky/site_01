@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &mdash; Sativa&#41;</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="home">
+    <header class="home__header header">
+        <div class="header__container">
+            <div class="header__logo logo">
+                <a href="#" class="logo__link">
+                    <svg class="logo__svg" viewBox="0 0 111 35" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.94922 2.98828C10.3086 2.98828 11.5508 3.17578 12.6758 3.55078C13.8008 3.92578 14.75 4.35938 15.5234 4.85156V9.66797C14.6797 9.15234 13.7773 8.67188 12.8164 8.22656C11.8555 7.78125 10.7656 7.55859 9.54688 7.55859C8.9375 7.55859 8.32812 7.65234 7.71875 7.83984C7.13281 8.02734 6.64062 8.30859 6.24219 8.68359C5.86719 9.05859 5.67969 9.53906 5.67969 10.125C5.67969 10.8984 6.01953 11.4844 6.69922 11.8828C7.37891 12.2812 8.21094 12.6797 9.19531 13.0781L12.0781 14.2734C13.7188 14.9766 14.9258 15.832 15.6992 16.8398C16.4727 17.8477 16.8594 18.9961 16.8594 20.2852C16.8594 21.6914 16.4492 22.9336 15.6289 24.0117C14.832 25.0664 13.7539 25.8984 12.3945 26.5078C11.0586 27.1172 9.57031 27.4219 7.92969 27.4219C6.54688 27.4219 5.22266 27.1875 3.95703 26.7188C2.69141 26.25 1.58984 25.6758 0.652344 24.9961V20.1797C1.68359 20.9297 2.82031 21.5625 4.0625 22.0781C5.30469 22.5938 6.62891 22.8516 8.03516 22.8516C9.01953 22.8516 9.86328 22.6641 10.5664 22.2891C11.2695 21.8906 11.6211 21.3047 11.6211 20.5312C11.6211 19.9219 11.3281 19.4297 10.7422 19.0547C10.1797 18.6562 9.55859 18.3281 8.87891 18.0703L5.25781 16.6641C3.42969 15.9609 2.1875 15.0469 1.53125 13.9219C0.898438 12.7734 0.582031 11.5078 0.582031 10.125C0.582031 8.69531 0.96875 7.45312 1.74219 6.39844C2.53906 5.32031 3.57031 4.48828 4.83594 3.90234C6.10156 3.29297 7.47266 2.98828 8.94922 2.98828ZM26.0391 8.78906C27 8.78906 27.9727 9.01172 28.957 9.45703C29.9414 9.90234 30.7617 10.5 31.418 11.25V9.24609H35.8828V27H31.418V24.0117C30.9023 24.9727 30.1523 25.8047 29.168 26.5078C28.1836 27.1875 27.0352 27.5273 25.7227 27.5273C24.293 27.5273 22.9688 27.1641 21.75 26.4375C20.5547 25.7109 19.5938 24.6562 18.8672 23.2734C18.1406 21.8906 17.7773 20.2148 17.7773 18.2461C17.7773 16.2773 18.1406 14.5898 18.8672 13.1836C19.6172 11.7773 20.6133 10.6992 21.8555 9.94922C23.1211 9.17578 24.5156 8.78906 26.0391 8.78906ZM26.9531 13.1484C26.0156 13.1484 25.207 13.3945 24.5273 13.8867C23.8711 14.3555 23.3555 14.9766 22.9805 15.75C22.6055 16.5234 22.418 17.3555 22.418 18.2461C22.418 19.582 22.8164 20.7188 23.6133 21.6562C24.4336 22.5938 25.5117 23.0625 26.8477 23.0625C27.6445 23.0625 28.3828 22.8516 29.0625 22.4297C29.7656 22.0078 30.3281 21.4219 30.75 20.6719C31.1953 19.8984 31.418 18.9727 31.418 17.8945V15.3633C30.7852 14.6836 30.0938 14.1445 29.3438 13.7461C28.6172 13.3477 27.8203 13.1484 26.9531 13.1484ZM45.8008 4.07812V9.24609H50.7227V12.9727H45.8008V20.6367C45.8008 21.4336 45.9766 22.0664 46.3281 22.5352C46.7031 22.9805 47.2539 23.2031 47.9805 23.2031C48.6133 23.2031 49.1523 23.1328 49.5977 22.9922C50.0664 22.8516 50.5 22.6523 50.8984 22.3945V25.9453C50.4531 26.3906 49.8906 26.7656 49.2109 27.0703C48.5547 27.375 47.7227 27.5273 46.7148 27.5273C45.1211 27.5273 43.8203 27.0234 42.8125 26.0156C41.8281 24.9844 41.3359 23.5781 41.3359 21.7969V12.9727H38.1367V10.6875C39.2617 10.2891 40.293 9.53906 41.2305 8.4375C42.1914 7.33594 42.9531 5.88281 43.5156 4.07812H45.8008ZM57.1953 0C58.0391 0 58.7656 0.304687 59.375 0.914062C59.9844 1.5 60.2891 2.20312 60.2891 3.02344C60.2891 3.82031 59.9844 4.52344 59.375 5.13281C58.7656 5.74219 58.0391 6.04688 57.1953 6.04688C56.3516 6.04688 55.625 5.74219 55.0156 5.13281C54.4297 4.52344 54.1367 3.82031 54.1367 3.02344C54.1367 2.20312 54.4297 1.5 55.0156 0.914062C55.625 0.304687 56.3516 0 57.1953 0ZM59.7969 9.24609V27H55.332V13.043H52.4844V9.24609H59.7969ZM80.5781 9.24609L72.1758 27H69.3281L61.0312 9.24609H66.2344L70.6992 20.25L75.375 9.24609H80.5781ZM87.6484 8.78906C88.6094 8.78906 89.582 9.01172 90.5664 9.45703C91.5508 9.90234 92.3711 10.5 93.0273 11.25V9.24609H97.4922V27H93.0273V24.0117C92.5117 24.9727 91.7617 25.8047 90.7773 26.5078C89.793 27.1875 88.6445 27.5273 87.332 27.5273C85.9023 27.5273 84.5781 27.1641 83.3594 26.4375C82.1641 25.7109 81.2031 24.6562 80.4766 23.2734C79.75 21.8906 79.3867 20.2148 79.3867 18.2461C79.3867 16.2773 79.75 14.5898 80.4766 13.1836C81.2266 11.7773 82.2227 10.6992 83.4648 9.94922C84.7305 9.17578 86.125 8.78906 87.6484 8.78906ZM88.5625 13.1484C87.625 13.1484 86.8164 13.3945 86.1367 13.8867C85.4805 14.3555 84.9648 14.9766 84.5898 15.75C84.2148 16.5234 84.0273 17.3555 84.0273 18.2461C84.0273 19.582 84.4258 20.7188 85.2227 21.6562C86.043 22.5938 87.1211 23.0625 88.457 23.0625C89.2539 23.0625 89.9922 22.8516 90.6719 22.4297C91.375 22.0078 91.9375 21.4219 92.3594 20.6719C92.8047 19.8984 93.0273 18.9727 93.0273 17.8945V15.3633C92.3945 14.6836 91.7031 14.1445 90.9531 13.7461C90.2266 13.3477 89.4297 13.1484 88.5625 13.1484ZM100.168 2.74219H104.422C105.148 3.49219 105.852 4.44141 106.531 5.58984C107.211 6.73828 107.82 8.01562 108.359 9.42188C108.898 10.8281 109.32 12.293 109.625 13.8164C109.953 15.3398 110.117 16.8633 110.117 18.3867C110.117 20.5195 109.836 22.5938 109.273 24.6094C108.734 26.625 108.031 28.4414 107.164 30.0586C106.297 31.6992 105.383 33.0234 104.422 34.0312H100.168C100.871 33.2344 101.539 32.2383 102.172 31.043C102.828 29.8477 103.402 28.5352 103.895 27.1055C104.387 25.6992 104.773 24.2461 105.055 22.7461C105.336 21.2461 105.477 19.793 105.477 18.3867C105.477 17.0742 105.336 15.6797 105.055 14.2031C104.773 12.7031 104.387 11.2266 103.895 9.77344C103.402 8.32031 102.828 6.98437 102.172 5.76562C101.539 4.54688 100.871 3.53906 100.168 2.74219Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span class="menu__stripe"></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./pages/blog.html" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="header__subscribe button button_white">Subcribe</a>
+        </div>
+    </header>
+    <main class="home__main">
+        <h1 hidden>Sativa</h1>
+        <section class="home__hero hero">
+            <div class="hero__container">
+                <div class="hero__body">
+                    <p class="hero__label label label_light label_fw500">
+                        Posted on <strong>startup</strong>
+                    </p>
+                    <p class="hero__title title title_56px title_light">Step-by-step guide to choosing great font pairs</p>
+                    <p class="hero__info publish-info publish-info_light">
+                        <span class="publish-info__authorship">
+                            By
+                            <span class="publish-info__name publish-info__name_yellow">James West</span>
+                        </span>
+                        <span class="publish-info__separator">&#124;</span>
+                        <time class="publish-info__date" datetime="2023-06-06">June 06, 2023</time>
+                    </p>
+                    <p class="hero__text text text_light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+                <a href="#" class="hero__button button">Read more &#62;</a>
+            </div>
+        </section>
+        <section class="home__featured featured">
+            <div class="featured__container">
+                <section class="featured__post">
+                    <h2 class="featured__title title title_36px">Featured post</h2>
+                    <div class="post-featured">
+                        <div class="post-featured__picture">
+                            <img class="post-featured__img" src="./assets/img/featured_post_pic.jpg" alt="light building with many windows">
+                        </div>
+                        <p class="post-featured__info publish-info">
+                            <span class="publish-info__authorship">
+                                By
+                                <span class="publish-info__name">James Doe</span>
+                            </span>
+                            <span class="publish-info__separator">&#124;</span>
+                            <time class="publish-info__date" datetime="2023-07-17">Jule 17, 2023</time>
+                        </p>
+                        <h3 class="post-featured__title title title_28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
+                        <p class="post-featured__text text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        </p>
+                        <a href="#" class="post-featured__button button">Read more &#62;</a>
+                    </div>
+                </section>
+                <section class="featured__more">
+                    <div class="featured__row">
+                        <h2 class="featured__title title title_36px">More posts</h2>
+                        <a href="./pages/blog.html" class="featured__button view-button">View all</a>
+                    </div>
+                    <ul class="featured__list posts-list">
+                        <li class="posts-list__item">
+                            <p class="posts-list__info publish-info publish-info">
+                                <span class="publish-info__authorship">
+                                    By
+                                    <span class="publish-info__name">John Deo</span>
+                                </span>
+                                <span class="publish-info__separator">&#124;</span>
+                                <time class="publish-info__date" datetime="2023-08-23">Aug 23, 2023</time>
+                            </p>
+                            <a href="#" class="posts-list__link">
+                                <h4 class="posts-list__title title title_24px">
+                                    8 Figma design systems that you can download for free today.
+                                </h4>
+                            </a>
+                        </li>
+                        <li class="posts-list__item">
+                            <p class="posts-list__info publish-info publish-info">
+                                <span class="publish-info__authorship">
+                                    By
+                                    <span class="publish-info__name">John Deo</span>
+                                </span>
+                                <span class="publish-info__separator">&#124;</span>
+                                <time class="publish-info__date" datetime="2023-08-23">Aug 23, 2023</time>
+                            </p>
+                            <a href="#" class="posts-list__link">
+                                <h4 class="posts-list__title title title_24px">
+                                    8 Figma design systems that you can download for free today.
+                                </h4>
+                            </a>
+                        </li>
+                        <li class="posts-list__item">
+                            <p class="posts-list__info publish-info publish-info">
+                                <span class="publish-info__authorship">
+                                    By
+                                    <span class="publish-info__name">John Deo</span>
+                                </span>
+                                <span class="publish-info__separator">&#124;</span>
+                                <time class="publish-info__date" datetime="2023-08-23">Aug 23, 2023</time>
+                            </p>
+                            <a href="#" class="posts-list__link">
+                                <h4 class="posts-list__title title title_24px">
+                                    8 Figma design systems that you can download for free today.
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="decorate">
+            <div class="decorate__white"></div>
+            <div class="decorate__yellow"></div>
+            <div class="decorate__purple"></div>
+        </div>
+        <section class="home__whoweare whoweare">
+            <div class="whoweare__container">
+                <div class="whoweare__wrap">
+                    <div class="whoweare__row">
+                        <section class="whoweare__about">
+                            <p class="whoweare__label label">About us</p>
+                            <p class="whoweare__title title title_36px">
+                                We are a community of content writers who share their learnings
+                            </p>
+                            <p class="whoweare__text text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </section>
+                        <section class="whoweare__mission">
+                            <p class="whoweare__label label">Our mission</p>
+                            <p class="whoweare__title title title_36px">
+                                Creating valuable content for creatives all around the world
+                            </p>
+                            <p class="whoweare__text text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </section>
+                    </div>
+                    <a href="#" class="whoweare__btn button button_transparent">Read more &#62;</a>
+                </div>
+            </div>
+        </section>
+        <section class="home__categories categories">
+            <div class="categories__container">
+                <h2 class="categories__title title title_36px">Choose a Category</h2>
+                <ul class="categories__list list-categories">
+                    <li class="list-categories__item">
+                        <a href="#" class="list-categories__link">
+                            <div class="list-categories__icon">
+                                <img src="./assets/img/business_icon.svg" alt="" class="list-categories__img">
+                            </div>
+                            <h3 class="list-categories__title title title_28px">Business</h3>
+                            <p class="list-categories__text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </a>
+                    </li>
+                    <li class="list-categories__item">
+                        <a href="#" class="list-categories__link">
+                            <div class="list-categories__icon">
+                                <img src="./assets/img/startup_icon.svg" alt="" class="list-categories__img">
+                            </div>
+                            <h3 class="list-categories__title title title_28px">Startup</h3>
+                            <p class="list-categories__text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </a>
+                    </li>
+                    <li class="list-categories__item">
+                        <a href="#" class="list-categories__link">
+                            <div class="list-categories__icon">
+                                <img src="./assets/img/economy_icon.svg" alt="" class="list-categories__img">
+                            </div>
+                            <h3 class="list-categories__title title title_28px">Economy</h3>
+                            <p class="list-categories__text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </a>
+                    </li>
+                    <li class="list-categories__item">
+                        <a href="#" class="list-categories__link">
+                            <div class="list-categories__icon">
+                                <img src="./assets/img/tech_icon.svg" alt="" class="list-categories__img">
+                            </div>
+                            <h3 class="list-categories__title title title_28px">Technology</h3>
+                            <p class="list-categories__text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="home__history history">
+            <div class="history__container">
+                <div class="history__wrap">
+                    <p class="history__label label">Why we started</p>
+                    <h2 class="history__title title title_48px">
+                        It started out as a simple idea and evolved into our passion
+                    </h2>
+                    <p class="history__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                    <a href="#" class="history__btn button">Discover our history &#62;</a>
+                </div>
+            </div>
+        </section>
+        <section class="home__authors authors">
+            <div class="authors__container">
+                <h2 class="authors__title title title_36px">Our authors</h2>
+                <ul class="authors__list writers">
+                    <li class="writers__item">
+                        <div class="writers__avatar">
+                            <img src="./assets/img/floyd_miles.jpg" alt="man in yellow shirt wearing glasses" class="writers__img">
+                        </div>
+                        <p class="writers__name title title_28px">Floyd Miles</p>
+                        <p class="writers__text text text_14px">Content Writer @Company</p>
+                        <ul class="writers__social social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/fb_icon.svg" alt="facebook logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/twitter_icon.svg" alt="twitter logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/inst_icon.svg" alt="instagram icon" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/linkedin_icon.svg" alt="LinkedIn logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="writers__item">
+                        <div class="writers__avatar">
+                            <img src="./assets/img/dianne_russell.jpg" alt="women in white and black shirt wearing sunglasses" class="writers__img">
+                        </div>
+                        <p class="writers__name title title_28px">Dianne Russell</p>
+                        <p class="writers__text text text_14px">Content Writer @Company</p>
+                        <ul class="writers__social social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/fb_icon.svg" alt="facebook logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/twitter_icon.svg" alt="twitter logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/inst_icon.svg" alt="instagram icon" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/linkedin_icon.svg" alt="LinkedIn logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="writers__item">
+                        <div class="writers__avatar">
+                            <img src="./assets/img/jenny_wilson.jpg" alt="women in white shirt" class="writers__img">
+                        </div>
+                        <p class="writers__name title title_28px">Jenny Wilson</p>
+                        <p class="writers__text text text_14px">Content Writer @Company</p>
+                        <ul class="writers__social social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/fb_icon.svg" alt="facebook logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/twitter_icon.svg" alt="twitter logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/inst_icon.svg" alt="instagram icon" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/linkedin_icon.svg" alt="LinkedIn logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="writers__item">
+                        <div class="writers__avatar">
+                            <img src="./assets/img/leslie_alexander.jpg" alt="women smilling" class="writers__img">
+                        </div>
+                        <p class="writers__name title title_28px">Leslie Alexander</p>
+                        <p class="writers__text text text_14px">Content Writer @Company</p>
+                        <ul class="writers__social social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/fb_icon.svg" alt="facebook logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/twitter_icon.svg" alt="twitter logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/inst_icon.svg" alt="instagram icon" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link">
+                                    <div class="social-links__icon">
+                                        <img src="./assets/img/linkedin_icon.svg" alt="LinkedIn logo" class="social-links__img">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="home__interaction interaction">
+            <div class="interaction__container">
+                <div class="interaction__title">
+                    <p class="text text_14px">We are</p>
+                    <p class="text text_24px">Featured in</p>
+                </div>
+                <ul class="interaction__list">
+                    <li class="interaction__item">
+                        <a href="#" class="interaction__link">
+                            <div class="interaction__logo">
+                                <img src="./assets/img/company_logo_01.png" class="interaction__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="interaction__item">
+                        <a href="#" class="interaction__link">
+                            <div class="interaction__logo">
+                                <img src="./assets/img/company_logo_02.png" class="interaction__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="interaction__item">
+                        <a href="#" class="interaction__link">
+                            <div class="interaction__logo">
+                                <img src="./assets/img/company_logo_03.png" class="interaction__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="interaction__item">
+                        <a href="#" class="interaction__link">
+                            <div class="interaction__logo">
+                                <img src="./assets/img/company_logo_04.png" class="interaction__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="interaction__item">
+                        <a href="#" class="interaction__link">
+                            <div class="interaction__logo">
+                                <img src="./assets/img/company_logo_05.png" class="interaction__img">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="home__testimonials testimonials">
+            <div class="testimonials__container">
+                <div class="testimonials__wrap">
+                    <div class="testimonials__header">
+                        <p class="testimonials__label label">Testimonials</p>
+                        <h2 class="testimonials__title title title_36px">
+                            What people say about our blog
+                        </h2>
+                        <p class="testimonials__text text text_dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <div class="testimonials__body">
+                        <p class="testimonials__feedback title title_24px _hidden">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="testimonials__feedback title title_24px _hidden">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum repellat veritatis voluptatibus nobis neque asperiores quam quaerat ad dolorum, sunt explicabo eius vel suscipit obcaecati reprehenderit quos sit vitae recusandae.
+                        </p>
+                        <p class="testimonials__feedback title title_24px _hidden">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis culpa blanditiis voluptas ipsa aspernatur fugit explicabo necessitatibus sed veniam placeat dicta porro ea solut.
+                        </p>
+                        <div class="testimonials__footer">
+                            <div class="testimonials__profile person-profile _hidden">
+                                <div class="person-profile__avatar">
+                                    <img src="./assets/img/person_profile_small.jpg" alt="man wearing sunglasses" class="person-profile__img">
+                                </div>
+                                <div class="person-profile__body">
+                                    <p class="person-profile__name title title_24px">Gregory Willson</p>
+                                    <p class="person-profile__location text">Los angeles, USA</p>
+                                </div>
+                            </div>
+                            <div class="testimonials__profile person-profile _hidden">
+                                <div class="person-profile__avatar">
+                                    <img src="./assets/img/person_profile_small.jpg" alt="man wearing sunglasses" class="person-profile__img">
+                                </div>
+                                <div class="person-profile__body">
+                                    <p class="person-profile__name title title_24px">Fritz Bruger</p>
+                                    <p class="person-profile__location text">Berlin, Germany</p>
+                                </div>
+                            </div>
+                            <div class="testimonials__profile person-profile _hidden">
+                                <div class="person-profile__avatar">
+                                    <img src="./assets/img/person_profile_small.jpg" alt="man wearing sunglasses" class="person-profile__img">
+                                </div>
+                                <div class="person-profile__body">
+                                    <p class="person-profile__name title title_24px">Jonathan Vallem</p>
+                                    <p class="person-profile__location text">New york, USA</p>
+                                </div>
+                            </div>
+                            <div class="testimonials__control flipping">
+                                <button type="button" class="flipping__back">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="white"/>
+                                        <path d="M34.2852 25C34.8374 25 35.2852 24.5523 35.2852 24C35.2852 23.4477 34.8374 23 34.2852 23L34.2852 25ZM13.449 23.2929C13.0585 23.6834 13.0585 24.3166 13.449 24.7071L19.813 31.0711C20.2035 31.4616 20.8367 31.4616 21.2272 31.0711C21.6177 30.6805 21.6177 30.0474 21.2272 29.6569L15.5703 24L21.2272 18.3431C21.6177 17.9526 21.6177 17.3195 21.2272 16.9289C20.8367 16.5384 20.2035 16.5384 19.813 16.9289L13.449 23.2929ZM34.2852 23L14.1561 23L14.1561 25L34.2852 25L34.2852 23Z" fill="#232536"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="flipping__next">
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="31" cy="31" r="31" fill="#232536"/>
+                                        <path d="M18 31C17.4477 31 17 31.4477 17 32C17 32.5523 17.4477 33 18 33V31ZM44.7071 32.7071C45.0976 32.3166 45.0976 31.6834 44.7071 31.2929L38.3431 24.9289C37.9526 24.5384 37.3195 24.5384 36.9289 24.9289C36.5384 25.3195 36.5384 25.9526 36.9289 26.3431L42.5858 32L36.9289 37.6569C36.5384 38.0474 36.5384 38.6805 36.9289 39.0711C37.3195 39.4616 37.9526 39.4616 38.3431 39.0711L44.7071 32.7071ZM18 33H44V31H18V33Z" fill="#F4F4F4"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home__join join">
+            <div class="join__container">
+                <p class="join__title title title_36px">
+                    Join our team to be a part of our story
+                </p>
+                <p class="join__text text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
+                <a href="#" class="join__btn button">Join Now</a>
+            </div>
+        </section>
+    </main>
+    <footer class="home__footer footer">
+        <div class="footer__container">
+            <header class="footer__header">
+                <div class="footer__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./pages/blog.html" class="menu__link">Blog</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Contacts</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Privacy police</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__logo logo">
+                    <a href="#" class="logo__link">
+                        <svg class="logo__svg" viewBox="0 0 111 35" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.94922 2.98828C10.3086 2.98828 11.5508 3.17578 12.6758 3.55078C13.8008 3.92578 14.75 4.35938 15.5234 4.85156V9.66797C14.6797 9.15234 13.7773 8.67188 12.8164 8.22656C11.8555 7.78125 10.7656 7.55859 9.54688 7.55859C8.9375 7.55859 8.32812 7.65234 7.71875 7.83984C7.13281 8.02734 6.64062 8.30859 6.24219 8.68359C5.86719 9.05859 5.67969 9.53906 5.67969 10.125C5.67969 10.8984 6.01953 11.4844 6.69922 11.8828C7.37891 12.2812 8.21094 12.6797 9.19531 13.0781L12.0781 14.2734C13.7188 14.9766 14.9258 15.832 15.6992 16.8398C16.4727 17.8477 16.8594 18.9961 16.8594 20.2852C16.8594 21.6914 16.4492 22.9336 15.6289 24.0117C14.832 25.0664 13.7539 25.8984 12.3945 26.5078C11.0586 27.1172 9.57031 27.4219 7.92969 27.4219C6.54688 27.4219 5.22266 27.1875 3.95703 26.7188C2.69141 26.25 1.58984 25.6758 0.652344 24.9961V20.1797C1.68359 20.9297 2.82031 21.5625 4.0625 22.0781C5.30469 22.5938 6.62891 22.8516 8.03516 22.8516C9.01953 22.8516 9.86328 22.6641 10.5664 22.2891C11.2695 21.8906 11.6211 21.3047 11.6211 20.5312C11.6211 19.9219 11.3281 19.4297 10.7422 19.0547C10.1797 18.6562 9.55859 18.3281 8.87891 18.0703L5.25781 16.6641C3.42969 15.9609 2.1875 15.0469 1.53125 13.9219C0.898438 12.7734 0.582031 11.5078 0.582031 10.125C0.582031 8.69531 0.96875 7.45312 1.74219 6.39844C2.53906 5.32031 3.57031 4.48828 4.83594 3.90234C6.10156 3.29297 7.47266 2.98828 8.94922 2.98828ZM26.0391 8.78906C27 8.78906 27.9727 9.01172 28.957 9.45703C29.9414 9.90234 30.7617 10.5 31.418 11.25V9.24609H35.8828V27H31.418V24.0117C30.9023 24.9727 30.1523 25.8047 29.168 26.5078C28.1836 27.1875 27.0352 27.5273 25.7227 27.5273C24.293 27.5273 22.9688 27.1641 21.75 26.4375C20.5547 25.7109 19.5938 24.6562 18.8672 23.2734C18.1406 21.8906 17.7773 20.2148 17.7773 18.2461C17.7773 16.2773 18.1406 14.5898 18.8672 13.1836C19.6172 11.7773 20.6133 10.6992 21.8555 9.94922C23.1211 9.17578 24.5156 8.78906 26.0391 8.78906ZM26.9531 13.1484C26.0156 13.1484 25.207 13.3945 24.5273 13.8867C23.8711 14.3555 23.3555 14.9766 22.9805 15.75C22.6055 16.5234 22.418 17.3555 22.418 18.2461C22.418 19.582 22.8164 20.7188 23.6133 21.6562C24.4336 22.5938 25.5117 23.0625 26.8477 23.0625C27.6445 23.0625 28.3828 22.8516 29.0625 22.4297C29.7656 22.0078 30.3281 21.4219 30.75 20.6719C31.1953 19.8984 31.418 18.9727 31.418 17.8945V15.3633C30.7852 14.6836 30.0938 14.1445 29.3438 13.7461C28.6172 13.3477 27.8203 13.1484 26.9531 13.1484ZM45.8008 4.07812V9.24609H50.7227V12.9727H45.8008V20.6367C45.8008 21.4336 45.9766 22.0664 46.3281 22.5352C46.7031 22.9805 47.2539 23.2031 47.9805 23.2031C48.6133 23.2031 49.1523 23.1328 49.5977 22.9922C50.0664 22.8516 50.5 22.6523 50.8984 22.3945V25.9453C50.4531 26.3906 49.8906 26.7656 49.2109 27.0703C48.5547 27.375 47.7227 27.5273 46.7148 27.5273C45.1211 27.5273 43.8203 27.0234 42.8125 26.0156C41.8281 24.9844 41.3359 23.5781 41.3359 21.7969V12.9727H38.1367V10.6875C39.2617 10.2891 40.293 9.53906 41.2305 8.4375C42.1914 7.33594 42.9531 5.88281 43.5156 4.07812H45.8008ZM57.1953 0C58.0391 0 58.7656 0.304687 59.375 0.914062C59.9844 1.5 60.2891 2.20312 60.2891 3.02344C60.2891 3.82031 59.9844 4.52344 59.375 5.13281C58.7656 5.74219 58.0391 6.04688 57.1953 6.04688C56.3516 6.04688 55.625 5.74219 55.0156 5.13281C54.4297 4.52344 54.1367 3.82031 54.1367 3.02344C54.1367 2.20312 54.4297 1.5 55.0156 0.914062C55.625 0.304687 56.3516 0 57.1953 0ZM59.7969 9.24609V27H55.332V13.043H52.4844V9.24609H59.7969ZM80.5781 9.24609L72.1758 27H69.3281L61.0312 9.24609H66.2344L70.6992 20.25L75.375 9.24609H80.5781ZM87.6484 8.78906C88.6094 8.78906 89.582 9.01172 90.5664 9.45703C91.5508 9.90234 92.3711 10.5 93.0273 11.25V9.24609H97.4922V27H93.0273V24.0117C92.5117 24.9727 91.7617 25.8047 90.7773 26.5078C89.793 27.1875 88.6445 27.5273 87.332 27.5273C85.9023 27.5273 84.5781 27.1641 83.3594 26.4375C82.1641 25.7109 81.2031 24.6562 80.4766 23.2734C79.75 21.8906 79.3867 20.2148 79.3867 18.2461C79.3867 16.2773 79.75 14.5898 80.4766 13.1836C81.2266 11.7773 82.2227 10.6992 83.4648 9.94922C84.7305 9.17578 86.125 8.78906 87.6484 8.78906ZM88.5625 13.1484C87.625 13.1484 86.8164 13.3945 86.1367 13.8867C85.4805 14.3555 84.9648 14.9766 84.5898 15.75C84.2148 16.5234 84.0273 17.3555 84.0273 18.2461C84.0273 19.582 84.4258 20.7188 85.2227 21.6562C86.043 22.5938 87.1211 23.0625 88.457 23.0625C89.2539 23.0625 89.9922 22.8516 90.6719 22.4297C91.375 22.0078 91.9375 21.4219 92.3594 20.6719C92.8047 19.8984 93.0273 18.9727 93.0273 17.8945V15.3633C92.3945 14.6836 91.7031 14.1445 90.9531 13.7461C90.2266 13.3477 89.4297 13.1484 88.5625 13.1484ZM100.168 2.74219H104.422C105.148 3.49219 105.852 4.44141 106.531 5.58984C107.211 6.73828 107.82 8.01562 108.359 9.42188C108.898 10.8281 109.32 12.293 109.625 13.8164C109.953 15.3398 110.117 16.8633 110.117 18.3867C110.117 20.5195 109.836 22.5938 109.273 24.6094C108.734 26.625 108.031 28.4414 107.164 30.0586C106.297 31.6992 105.383 33.0234 104.422 34.0312H100.168C100.871 33.2344 101.539 32.2383 102.172 31.043C102.828 29.8477 103.402 28.5352 103.895 27.1055C104.387 25.6992 104.773 24.2461 105.055 22.7461C105.336 21.2461 105.477 19.793 105.477 18.3867C105.477 17.0742 105.336 15.6797 105.055 14.2031C104.773 12.7031 104.387 11.2266 103.895 9.77344C103.402 8.32031 102.828 6.98437 102.172 5.76562C101.539 4.54688 100.871 3.53906 100.168 2.74219Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <div class="footer__subscribe">
+                <p class="footer__title title title_36px title_light">
+                    Subscribe to our news letter to get latest updates and news
+                </p>
+                <form action="#" class="footer__form form-subscribe">
+                    <input
+                        class="form-subscribe__input"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+                    <button class="form-subscribe__button button" type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer__info">
+                <div class="footer__contacts contacts">
+                    <p class="contacts__address text text_light">Street 152 6436 Ntown</p>
+                    <div class="contacts__row">
+                        <a class="contacts__link text text_light" href="mailto:manager@mail.web">manager@mail.web</a>
+                        <a class="contacts__link text text_light" href="tel:45006002010">4 500 600 2010</a>
+                    </div>
+                </div>
+                <ul class="footer__social social-links">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <div class="social-links__icon">
+                                <img src="./assets/img/fb_icon_light.svg" alt="facebook logo" class="social-links__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <div class="social-links__icon">
+                                <img src="./assets/img/twitter_icon_light.svg" alt="twitter logo" class="social-links__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <div class="social-links__icon">
+                                <img src="./assets/img/inst_icon_light.svg" alt="instagram icon" class="social-links__img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <div class="social-links__icon">
+                                <img src="./assets/img/linkedin_icon_light.svg" alt="LinkedIn logo" class="social-links__img">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
