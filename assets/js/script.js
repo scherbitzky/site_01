@@ -103,6 +103,4 @@ if (btnNext && btnBack) {
             toggleClass();
         }
     });
-} else {
-    console.log('idi v pizde');
 }
