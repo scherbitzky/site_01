@@ -986,6 +986,7 @@ section {
   }
 }
 .testimonials__feedback {
+  display: inline-block;
   margin-bottom: 109px;
   max-width: 469px;
   letter-spacing: normal;
@@ -996,6 +997,14 @@ section {
     margin-bottom: 48px;
     font-size: 20px;
   }
+}
+.testimonials__profile {
+  flex: 1 0 211px;
+}
+.testimonials__footer {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
 }
 .testimonials ._shown {
   position: relative;
@@ -1008,14 +1017,6 @@ section {
   left: -200%;
   opacity: 0;
   transition: ease-in-out left 0.5s, opacity 0.2s;
-}
-.testimonials__profile {
-  flex: 1 0 211px;
-}
-.testimonials__footer {
-  display: flex;
-  gap: 36px;
-  flex-wrap: wrap;
 }
 
 .join__container {
