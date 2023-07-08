@@ -18,12 +18,12 @@ button {
 
 section {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 
 ._show {
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 
 ._lock {
