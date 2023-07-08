@@ -153,13 +153,12 @@ section {
 @media (max-width: 767px) {
   .menu__list {
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 25px;
     font-size: 28px;
   }
 }
 @media (max-width: 767px) {
   .menu__item {
-    padding-bottom: 50px;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
@@ -499,7 +498,7 @@ section {
 }
 @media (max-width: 767px) {
   .person-profile__name {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -629,6 +628,13 @@ section {
     padding: 15px;
     border: 1px solid #d2d2d5;
   }
+}
+
+.devider {
+  max-width: 100%;
+  height: 1px;
+  background-color: #6D6E76;
+  opacity: 0.3;
 }
 
 .header {
@@ -1056,8 +1062,18 @@ section {
   max-width: 414px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .join__container {
+    max-width: 320px;
+  }
+}
 .join__title {
   margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .join__title {
+    font-size: 28px;
+  }
 }
 .join__text {
   margin-bottom: 32px;
@@ -1219,8 +1235,10 @@ section {
 .featured-post__title, .featured-post__info {
   margin-bottom: 16px;
 }
-.featured-post__title {
-  font-size: 28px;
+@media (max-width: 992px) {
+  .featured-post__title {
+    font-size: 28px;
+  }
 }
 .featured-post__text {
   margin-bottom: 32px;
@@ -1256,14 +1274,15 @@ section {
 }
 
 .posts__title {
-  margin-bottom: 64px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #d2d2d5;
+  margin-bottom: 32px;
 }
 @media (max-width: 992px) {
   .posts__title {
     font-size: 36px;
   }
+}
+.posts__devider {
+  margin-bottom: 64px;
 }
 .posts__item {
   margin-bottom: 64px;
@@ -1295,4 +1314,172 @@ section {
 }
 .posts__btn_disabled:hover {
   text-decoration: none;
+}
+
+.blog-post {
+  margin: 0;
+  padding: 0;
+}
+.blog-post__title {
+  margin-bottom: 64px;
+}
+@media (max-width: 767px) {
+  .blog-post__title {
+    margin-bottom: 32px;
+  }
+}
+.blog-post__post, .blog-post__suggested, .blog-post__join {
+  margin-bottom: 128px;
+}
+@media (max-width: 767px) {
+  .blog-post__post, .blog-post__suggested, .blog-post__join {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 575px) {
+  .blog-post__post, .blog-post__suggested, .blog-post__join {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-post__title {
+    font-size: 28px;
+  }
+}
+
+.post {
+  padding-top: 120px;
+}
+@media (max-width: 767px) {
+  .post {
+    padding-top: 95px;
+  }
+}
+.post__wrap {
+  margin: 0 auto;
+  max-width: 834px;
+}
+.post__author {
+  margin-bottom: 24px;
+}
+.post__headline {
+  margin-bottom: 34px;
+}
+@media (max-width: 1200px) {
+  .post__headline {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .post__headline {
+    font-size: 28px;
+  }
+}
+.post__category {
+  margin-bottom: 64px;
+}
+@media (max-width: 767px) {
+  .post__category {
+    margin-bottom: 32px;
+  }
+}
+.post__cover {
+  margin-bottom: 64px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .post__cover {
+    margin-bottom: 32px;
+  }
+}
+.post__cover .post__img {
+  max-width: 100%;
+  font-size: 0;
+}
+.post__chapter {
+  margin-bottom: 48px;
+}
+@media (max-width: 575px) {
+  .post__chapter {
+    margin-bottom: 24px;
+  }
+}
+.post__title {
+  margin-bottom: 16px;
+}
+@media (max-width: 1200px) {
+  .post__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .post__title {
+    font-size: 24px;
+  }
+}
+.post__text {
+  margin-bottom: 24px;
+}
+.post__list {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style-position: inside;
+}
+.post__item {
+  opacity: 0.77;
+}
+@media (max-width: 575px) {
+  .post__item {
+    font-size: 20px;
+  }
+}
+
+.suggested__list {
+  margin: 0 0 64px;
+  padding: 0;
+  display: grid;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+@media (max-width: 992px) {
+  .suggested__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 16px;
+  }
+}
+@media (max-width: 575px) {
+  .suggested__list {
+    grid-template-columns: 1fr;
+  }
+}
+.suggested__thumbnail {
+  margin-bottom: 32px;
+}
+.suggested__img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: 0;
+}
+.suggested__info {
+  margin-bottom: 16px;
+}
+.suggested__link {
+  text-decoration: none;
+}
+.suggested__title {
+  margin-bottom: 16px;
+}
+@media (max-width: 1200px) {
+  .suggested__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .suggested__title {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
