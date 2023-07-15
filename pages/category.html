@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="../assets/img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="../assets/img/favicons/apple_icon_180x180.png">  <!-- 180×180 -->
+    <link rel="apple-touch-icon" href="../assets/img/favicons/apple_icon_180x180.png"> <!-- 180×180 -->
     <link rel="manifest" href="../favicons.webmanifest">
 </head>
 <body class="category">
@@ -39,17 +39,169 @@
                         <li class="menu__item">
                             <a href="./contact.html" class="menu__link">Contact us</a>
                         </li>
+                        <li class="menu__item">
+                            <a data-goto="#subscribe" href="#" class="menu__link menu__link_hidden">Subscribe</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./privacy.html" class="menu__link menu__link_hidden">Privacy policy</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
-            <button type="button" class="header__subscribe button button_white">Subcribe</button>
+            <a data-goto="#subscribe" href="#" class="header__subscribe button button_white">Subcribe</a>
         </div>
     </header>
     <main class="category__main">
+        <h1 hidden>Sativa</h1>
+        <section class="category__heading">
+            <h2 class="category__name title title_48px">Business</h2>
+            <p class="category__description text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+            <p class="category__breadcrumbs label">
+                Blog &gt; Business
+            </p>
+        </section>
+        <div class="category__container">
+            <div class="category__body">
+                <div class="category__posts">
+                    <h2 class="category__title title title_36px">Submitted posts</h2>
+                    <ul class="category__list">
+                        <li class="category__post post-item">
+                            <div class="post-item__thumbnail post-item__thumbnail_square">
+                                <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img post-item__img_fit">
+                            </div>
+                            <div class="post-item__body">
+                                <p class="post-item__category label label_purple">Business</p>
+                                <a href="./post.html" class="post-item__link">
+                                    <h3 class="post-item__title title title_36px">Top 6 free website mockup tools 2023</h3>
+                                </a>
+                                <p class="post-item__text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="category__post post-item">
+                            <div class="post-item__thumbnail post-item__thumbnail_square">
+                                <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img post-item__img_fit">
+                            </div>
+                            <div class="post-item__body">
+                                <p class="post-item__category label label_purple">Startup</p>
+                                <a href="./post.html" class="post-item__link">
+                                    <h3 class="post-item__title title title_36px">Step-by-step guide to choosing great font pairs</h3>
+                                </a>
+                                <p class="post-item__text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="category__post post-item">
+                            <div class="post-item__thumbnail post-item__thumbnail_square">
+                                <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img post-item__img_fit">
+                            </div>
+                            <div class="post-item__body">
+                                <p class="post-item__category label label_purple">Technology</p>
+                                <a href="./post.html" class="post-item__link">
+                                    <h3 class="post-item__title title title_36px">Ten free foogle fonts that you should use</h3>
+                                </a>
+                                <p class="post-item__text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="category__post post-item">
+                            <div class="post-item__thumbnail post-item__thumbnail_square">
+                                <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img post-item__img_fit">
+                            </div>
+                            <div class="post-item__body">
+                                <p class="post-item__category label label_purple">Experience</p>
+                                <a href="./post.html" class="post-item__link">
+                                    <h3 class="post-item__title title title_36px">What did I learn from doing 50+ design sprints?</h3>
+                                </a>
+                                <p class="post-item__text text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <aside class="category__aside">
+                    <div class="category__categories aside-categories">
+                        <h2 class="aside-categories__title title title_36px">Categories</h2>
+                        <ul class="aside-categories__list">
+                            <li class="aside-categories__item">
+                                <a href="#" class="aside-categories__link">
+                                    <div class="aside-categories__body">
+                                        <div class="aside-categories__icon">
+                                            <img src="../assets/img/business_icon.svg" alt="" class="aside-categories__img">
+                                        </div>
+                                        <h3 class="aside-categories__name title title_28px">Business</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a href="#" class="aside-categories__link">
+                                    <div class="aside-categories__body">
+                                        <div class="aside-categories__icon">
+                                            <img src="../assets/img/startup_icon.svg" alt="" class="aside-categories__img">
+                                        </div>
+                                        <h3 class="aside-categories__name title title_28px">Startup</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a href="#" class="aside-categories__link">
+                                    <div class="aside-categories__body">
+                                        <div class="aside-categories__icon">
+                                            <img src="../assets/img/economy_icon.svg" alt="" class="aside-categories__img">
+                                        </div>
+                                        <h3 class="aside-categories__name title title_28px">Economy</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a href="#" class="aside-categories__link">
+                                    <div class="aside-categories__body">
+                                        <div class="aside-categories__icon">
+                                            <img src="../assets/img/tech_icon.svg" alt="" class="aside-categories__img">
+                                        </div>
+                                        <h3 class="aside-categories__name title title_28px">Technology</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category__tags tags">
+                        <h2 class="tags__title title title_36px">All Tags</h2>
+                        <ul class="tags__list">
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Business</a>
+                            </li>
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Experience</a>
+                            </li>
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Screen</a>
+                            </li>
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Technology</a>
+                            </li>
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Marketing</a>
+                            </li>
+                            <li class="tags__item text">
+                                <a href="#" class="tags__link">Life</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
     </main>
     <footer class="category__footer footer">
         <div class="footer__container">
-            <header class="footer__header">
+            <div class="footer__header">
                 <div class="footer__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
@@ -66,9 +218,6 @@
                                 <a href="./contact.html" class="menu__link">Contact us</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#subscribe" class="menu__link menu__link_hidden">Subscribe</a>
-                            </li>
-                            <li class="menu__item">
                                 <a href="./privacy.html" class="menu__link menu__link_hidden">Privacy policy</a>
                             </li>
                         </ul>
@@ -81,8 +230,8 @@
                         </svg>
                     </a>
                 </div>
-            </header>
-            <div class="footer__subscribe">
+            </div>
+            <div id="subscribe" class="footer__subscribe">
                 <p class="footer__title title title_36px title_light">
                     Subscribe to our news letter to get latest updates and news
                 </p>
@@ -137,6 +286,7 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/smoothscroll.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@
                             <a href="./contact.html" class="menu__link">Contact us</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#subscribe" class="menu__link menu__link_hidden">Subscribe</a>
+                            <a data-goto="#subscribe" href="#" class="menu__link menu__link_hidden">Subscribe</a>
                         </li>
                         <li class="menu__item">
                             <a href="./privacy.html" class="menu__link menu__link_hidden">Privacy policy</a>
@@ -48,7 +48,7 @@
                     </ul>
                 </nav>
             </div>
-            <a href="#subscribe" class="header__subscribe button button_white">Subcribe</a>
+            <a data-goto="#subscribe" href="#" class="header__subscribe button button_white">Subcribe</a>
         </div>
     </header>
     <main class="blog__main">
@@ -79,12 +79,12 @@
                 </div>
             </div>
         </section>
-        <section class="posts">
-            <div class="posts__container">
-                <h2 class="posts__title title title_48px title_left">All posts</h2>
-                <div class="posts__devider devider"></div>
-                <ul class="posts__list">
-                    <li class="posts__item post-item">
+        <section class="all-posts">
+            <div class="all-posts__container">
+                <h2 class="all-posts__title title title_48px title_left">All posts</h2>
+                <div class="all-posts__devider devider"></div>
+                <ul class="all-posts__list">
+                    <li class="all-posts__item post-item">
                         <div class="post-item__thumbnail">
                             <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img">
                         </div>
@@ -96,7 +96,7 @@
                             <p class="post-item__text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         </div>
                     </li>
-                    <li class="posts__item post-item">
+                    <li class="all-posts__item post-item">
                         <div class="post-item__thumbnail">
                             <img src="../assets/img/post_thumbnail_02.jpg" alt="people at the table having a meeting" class="post-item__img">
                         </div>
@@ -108,7 +108,7 @@
                             <p class="post-item__text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         </div>
                     </li>
-                    <li class="posts__item post-item">
+                    <li class="all-posts__item post-item">
                         <div class="post-item__thumbnail">
                             <img src="../assets/img/post_thumbnail_03.jpg" alt="woman looking at man smiling" class="post-item__img">
                         </div>
@@ -120,7 +120,7 @@
                             <p class="post-item__text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         </div>
                     </li>
-                    <li class="posts__item post-item">
+                    <li class="all-posts__item post-item">
                         <div class="post-item__thumbnail">
                             <img src="../assets/img/post_thumbnail_04.jpg" alt="two people are walking down the corridor" class="post-item__img">
                         </div>
@@ -132,7 +132,7 @@
                             <p class="post-item__text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         </div>
                     </li>
-                    <li class="posts__item post-item">
+                    <li class="all-posts__item post-item">
                         <div class="post-item__thumbnail">
                             <img src="../assets/img/post_thumbnail_01.jpg" alt="two women writing on whiteboard" class="post-item__img">
                         </div>
@@ -145,9 +145,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="posts__pagination">
-                    <button type="button" class="posts__btn posts__btn_disabled button button_transparent">&lt; Prev</button>
-                    <button type="button" class="posts__btn posts__btn button button_transparent">Next &gt;</button>
+                <div class="all-posts__pagination">
+                    <button type="button" class="all-posts__btn all-posts__btn_disabled button button_transparent">&lt; Prev</button>
+                    <button type="button" class="all-posts__btn button button_transparent">Next &gt;</button>
                 </div>
             </div>
         </section>
@@ -216,7 +216,7 @@
     </main>
     <footer class="blog__footer footer">
         <div class="footer__container">
-            <header class="footer__header">
+            <div class="footer__header">
                 <div class="footer__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
@@ -245,7 +245,7 @@
                         </svg>
                     </a>
                 </div>
-            </header>
+            </div>
             <div class="footer__subscribe" id="subscribe">
                 <p class="footer__title title title_36px title_light">
                     Subscribe to our news letter to get latest updates and news
