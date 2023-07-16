@@ -30,7 +30,6 @@ if (subscribeLinks.length > 0) {
                 const gotoBlock = document.querySelector(data);
                 let gotoBlockPosition = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('.header').offsetHeight;
                 smoothScroll({yPos: gotoBlockPosition, duration: 1000});
-                document.querySelector('.form-subscribe__input').focus();
                 e.preventDefault();
             }
         });
