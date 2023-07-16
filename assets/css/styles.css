@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
 [class*=__container] {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,22 +33,6 @@ section {
 
 ._lock {
   overflow: hidden;
-}
-
-.home {
-  margin: 0;
-  padding: 0;
-}
-.home__hero, .home__featured, .home__whoweare, .home__categories, .home__history, .home__testimonials, .home__join {
-  margin-bottom: 128px;
-}
-@media (max-width: 1200px) {
-  .home__hero, .home__featured, .home__whoweare, .home__categories, .home__history, .home__testimonials, .home__join {
-    margin-bottom: 64px;
-  }
-}
-.home__authors, .home__interaction {
-  margin-bottom: 96px;
 }
 
 .logo__svg {
@@ -636,6 +625,18 @@ section {
   opacity: 0.3;
 }
 
+.home__hero, .home__featured, .home__whoweare, .home__categories, .home__history, .home__testimonials, .home__join {
+  margin-bottom: 128px;
+}
+@media (max-width: 1200px) {
+  .home__hero, .home__featured, .home__whoweare, .home__categories, .home__history, .home__testimonials, .home__join {
+    margin-bottom: 64px;
+  }
+}
+.home__authors, .home__interaction {
+  margin-bottom: 96px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1195,10 +1196,6 @@ section {
   gap: 16px;
 }
 
-.blog {
-  margin: 0;
-  padding: 0;
-}
 .blog__featured-post {
   margin-bottom: 64px;
 }
@@ -1506,10 +1503,6 @@ section {
   }
 }
 
-.about {
-  margin: 0;
-  padding: 0;
-}
 .about__intro {
   margin-top: 200px;
 }
@@ -1769,10 +1762,6 @@ section {
   font-size: 0;
 }
 
-.category {
-  margin: 0;
-  padding: 0;
-}
 .category__container {
   padding: 0 15px;
 }
@@ -1949,10 +1938,6 @@ section {
   }
 }
 
-.author {
-  margin: 0;
-  padding: 0;
-}
 .author__card {
   padding-top: 200px;
   margin-bottom: 128px;
@@ -2129,5 +2114,44 @@ section {
 @media (max-width: 767px) {
   .works__title {
     font-size: 24px;
+  }
+}
+
+.privacy__heading {
+  padding: 160px 15px 80px;
+  margin-bottom: 128px;
+  background-color: #F4F0F8;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .privacy__heading {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .privacy__heading {
+    padding: 90px 15px 40px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .privacy__title {
+    font-size: 36px;
+  }
+}
+.privacy__content {
+  max-width: 768px;
+  margin: 0 auto 64px;
+  padding: 0 15px;
+}
+.privacy__chapter {
+  margin-bottom: 32px;
+}
+.privacy__chapter-title, .privacy__text {
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .privacy__chapter-title {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=styles.css.map */
