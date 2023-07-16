@@ -52,6 +52,70 @@
         </div>
     </header>
     <main class="contact__main">
+        <div class="contact__wrap">
+            <section class="contact__heading">
+                <h1 class="contact__title label">Contact us</h1>
+                <p class="contact__subtitle title title_48px">Let's Start a Conversation</p>
+                <p class="contact__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                </p>
+            </section>
+            <div class="contact__info">
+                <ul class="info-list">
+                    <li class="info-list__item">
+                        <p class="info-list__title">Working hours</p>
+                        <div class="info-list__devider devider"></div>
+                        <p class="info-list__content info-list__content_bold">
+                            Monday to Friday
+                        </p>
+                        <p class="info-list__content info-list__content_bold">
+                            9:00 AV to 8:00 PM
+                        </p>
+                        <p class="info-list__content">
+                            Our Support Team is available 24/7
+                        </p>
+                    </li>
+                    <li class="info-list__item">
+                        <p class="info-list__title">Contact Us</p>
+                        <div class="info-list__devider devider"></div>
+                        <p class="info-list__content info-list__content_bold">
+                            <a href="tel:02079932905" class="info-list__link">020 7993 2905</a>
+                        </p>
+                        <p class="info-list__content">
+                            <a href="mailto:hello@sativa.com" class="info-list__link">
+                                hello@sativa.com
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <form action="#" class="contact__form message-form">
+                <input
+                    type="text"
+                    name="email"
+                    class="message-form__input"
+                    placeholder="Full Name"
+                    required
+                >
+                <input
+                    type="email"
+                    name="email"
+                    class="message-form__input"
+                    placeholder="Your Email"
+                    required
+                >
+                <div class="message-form__input select">
+                    Custom select input will appear soon &#41;&#41;
+                </div>
+                <textarea
+                    name="message"
+                    class="message-form__textarea"
+                    placeholder="Message"
+                    required
+                ></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
     </main>
     <footer class="contact__footer footer">
         <div class="footer__container">
@@ -85,7 +149,7 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__subscribe">
+            <div id="subscribe" class="footer__subscribe">
                 <p class="footer__title title title_36px title_light">
                     Subscribe to our news letter to get latest updates and news
                 </p>
@@ -140,6 +204,7 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/smoothscroll.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 </html>
