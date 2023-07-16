@@ -15,11 +15,13 @@ const subscribeLinks = document.querySelectorAll('a[data-goto]');
 const menuLinks = document.querySelectorAll('.menu__link');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
-        menuLink.addEventListener('click', () => {
-            document.body.classList.toggle('_lock');
-            menuIcon.classList.toggle('_active');
-            menuBody.classList.toggle('_active');
-        });
+        if (!menuLink.classList.contains('menu__link_current')) {
+            menuLink.addEventListener('click', () => {
+                document.body.classList.toggle('_lock');
+                menuIcon.classList.toggle('_active');
+                menuBody.classList.toggle('_active');
+            });
+        }
     });
 }
 if (subscribeLinks.length > 0) {

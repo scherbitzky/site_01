@@ -904,7 +904,7 @@ section {
 }
 @media (max-width: 1200px) {
   .history__wrap {
-    max-width: 600px;
+    max-width: 650px;
   }
 }
 @media (max-width: 992px) {
