@@ -104,8 +104,16 @@
                     placeholder="Your Email"
                     required
                 >
-                <div class="message-form__input select">
-                    Custom select input will appear soon &#41;&#41;
+                <div class="message-form__select select">
+                    <button type="button" class="message-form__input select__field" data-value="no_topic">Choose topic</button>
+                    <ul class="select__list">
+                        <li class="select__option" data-value="value_1">Topic 1</li>
+                        <li class="select__option" data-value="value_2">Topic 2</li>
+                        <li class="select__option" data-value="value_3">Topic 3</li>
+                        <li class="select__option" data-value="value_4">Topic 4</li>
+                        <li class="select__option" data-value="value_5">Topic 5</li>
+                    </ul>
+                    <input type="hidden" name="hidden" value="" class="select__hidden">
                 </div>
                 <textarea
                     name="message"
@@ -162,6 +170,7 @@
                         required
                     >
                     <button class="form-subscribe__button button" type="submit">Subscribe</button>
+                    <p class="form-subscribe__pop title title_36px">Thanks for Subscribe</p>
                 </form>
             </div>
             <div class="footer__info">

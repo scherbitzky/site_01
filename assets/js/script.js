@@ -107,3 +107,34 @@ if (historyContainer) {
     }
     setInterval(handler, 5000);
 }
+
+const form = document.querySelector('.form-subscribe');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        form.classList.add('_subscribed');
+    })
+}
+
+const select = document.querySelector('.select');
+if (select) {
+    const selectField = document.querySelector('.select__field');
+    const selectInput = document.querySelector('.select__hidden');
+    select.addEventListener('click', function(e) {
+        select.classList.toggle('_active');
+        selectField.innerText = e.target.innerText;
+        selectInput.value = e.target.getAttribute('data-value');
+    });
+    document.addEventListener('click', function(e) {
+        if (e.target !== selectField) {
+            select.classList.remove('_active');
+        }
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' || e.key === 'Tab') {
+            if (e.target === selectField) {
+                select.classList.remove('_active');
+            }
+        }
+    });
+}

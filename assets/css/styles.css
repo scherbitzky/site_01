@@ -58,7 +58,8 @@ section {
 .aside-categories__list,
 .tags__list,
 .works__list,
-.info-list {
+.info-list,
+.select__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -484,7 +485,13 @@ section {
   opacity: 0.8;
 }
 
+.form-subscribe {
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s;
+}
 .form-subscribe__input {
+  position: relative;
   margin-right: 24px;
   padding: 14px 24px;
   max-width: 323px;
@@ -494,6 +501,11 @@ section {
   color: #6D6E76;
   background-color: transparent;
   border: 1px solid #4C4C4C;
+  z-index: 2;
+}
+._subscribed .form-subscribe__input {
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 @media (max-width: 575px) {
   .form-subscribe__input {
@@ -501,6 +513,29 @@ section {
     margin-bottom: 16px;
     padding: 14px 10px;
   }
+}
+.form-subscribe__button {
+  position: relative;
+  z-index: 2;
+}
+._subscribed .form-subscribe__button {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.form-subscribe__pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFD050;
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+._subscribed .form-subscribe__pop {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .contacts__address {
@@ -2235,8 +2270,71 @@ section {
   border: 1px solid rgba(109, 110, 118, 0.5);
   border-radius: 2px;
 }
+.message-form__input:focus, .message-form__input:focus-visible, .message-form__input:active, .message-form__textarea:focus, .message-form__textarea:focus-visible, .message-form__textarea:active {
+  outline: 1px solid #232536;
+  z-index: 2;
+}
+.message-form__input::-moz-placeholder, .message-form__textarea::-moz-placeholder {
+  color: #232536;
+}
+.message-form__input::placeholder, .message-form__textarea::placeholder {
+  color: #232536;
+}
 .message-form__textarea {
   resize: none;
+}
+
+.select {
+  position: relative;
+}
+.select__field {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+}
+.select__field::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  top: 31px;
+  right: 24px;
+  background-image: url("../img/down_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+.select._active .select__field::after {
+  transform: rotate(-180deg);
+  transition: transform 0.3s;
+}
+.select__list {
+  display: none;
+  position: absolute;
+  top: 69px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-bottom: none;
+}
+.select._active .select__list {
+  display: block;
+}
+.select__option {
+  padding: 10px 32px 10px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(109, 110, 118, 0.5);
+  cursor: pointer;
+}
+.select__option:hover {
+  background-color: #FBF6EA;
 }
 
 .privacy__heading {
