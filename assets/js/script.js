@@ -138,3 +138,36 @@ if (select) {
         }
     });
 }
+
+const joinBtn = document.querySelector('.join__btn');
+if (joinBtn) {
+    joinBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        let body = document.querySelector('body');
+        body.classList.add('_lock');
+        let modal = document.querySelector('.modal');
+        let closeBtn = document.querySelector('.modal__close');
+        let joinForm = document.querySelector('.modal__form');
+        modal.classList.add('_active');
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('_active');
+            body.classList.remove('_lock');
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                modal.classList.remove('_active');
+                body.classList.remove('_lock');
+            }
+        });
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('_active');
+                body.classList.remove('_lock');
+            }
+        });
+        joinForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.querySelector('.modal__body').classList.add('_submited');
+        });
+    });
+}
