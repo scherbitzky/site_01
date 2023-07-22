@@ -120,7 +120,18 @@ if (form) {
 
 const contactForm = document.querySelector('.message-form');
 if (contactForm) {
-  const select = document.querySelector('.select');
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.querySelector('.contact__form').classList.add('_submited');
+    setTimeout(function() {
+      contactForm.reset();
+      document.querySelector('.contact__form').classList.remove('_submited');
+    }, 4000);
+  })
+}
+
+const select = document.querySelector('.select');
+if (select) {
   const selectField = document.querySelector('.select__field');
   const selectInput = document.querySelector('.select__hidden');
   select.addEventListener('click', function (e) {
@@ -140,14 +151,6 @@ if (contactForm) {
       }
     }
   });
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    document.querySelector('.contact__form').classList.add('_submited');
-    setTimeout(function() {
-      contactForm.reset();
-      document.querySelector('.contact__form').classList.remove('_submited');
-    }, 4000);
-  })
 }
   
 
